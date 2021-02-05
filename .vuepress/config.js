@@ -1,7 +1,7 @@
 module.exports = {
-  "title": "",
-  "description": "",
-  base:'/myBlog/',
+  "title": "HoweBlog",
+  "description": "HoweBlog",
+  "base":'/myBlog/',
   "dest": ".vuepress/dist",
   "head": [
     [
@@ -93,5 +93,6 @@ module.exports = {
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
+  plugins: ['@vuepress/last-updated']
 }
