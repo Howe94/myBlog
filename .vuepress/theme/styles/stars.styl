@@ -1,0 +1,62 @@
+.hero{
+  width: 100%;
+  color: #fff;
+  background-color: #fff;
+  background: radial-gradient(ellipse at bottom, #3c4e63 0%, #20222b 100%);
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px white);
+  position: relative;
+  .stars{
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: absolute;
+    perspective-origin: 50% 100%;
+    left: 50%;
+    animation: rotate 20s infinite linear;
+    bottom: -256px;
+    .star{
+      width: 2px;
+      height: 2px;
+      background: #f7f7b8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+    }
+    @keyframes rotate {
+      0%{
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+      }
+      100%{
+        transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+      }
+    }
+  }
+  .ad-info{
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 180px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  .dot-num{
+    .dot{
+      position: absolute;
+      top: 0;
+      display: inline-block;
+      .dot-title {
+        font-size: 40px;
+        line-height: 37px;
+        font-weight: bold;
+        color: #f23340;
+      }
+      .dot-describe {
+        margin-top: 10px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+      }
+    }
+  }
+}

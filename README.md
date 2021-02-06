@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 前端小豪
-tagline: 在技术道路上总会遇到bug的小伙子.
+tagline: 在技术道路上总会遇到bug的菜鸟
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
